@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/09f92e5bcf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <!-- ..................header.................  -->
+   <div class="header" id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" alt="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Porfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="headerText">
+            <h1>Hey! I'm <span class="coloured">Rashika </span>Agrawal.</h1>
+            <p>Frontend Web Developer</p>
+        </div>
+    </div>
+   </div>
+   <!-- ......................About................. -->
+   <div class="about" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col1">
+               <img src="aboutMeImg.png" class="aboutImg">
+            </div>
+            <div class="col2">
+                  <h1 class="title">About Me</h1>  
+                  <p>I'm <span class="coloured">Rashika Agrawal</span>, sphomore at <span class="coloured">Malaviya National Institute of Technolgy</span> , Jaipur, Rajasthan,India currently pursuing Bachelor of Technology under <span class="coloured">Electrical Engineering</span>. <br>I aim to be a professional graphic and <span class="coloured">UX/UI designer</span> in near future. Currently working for some college clubs I'm keen to learn more and to give my best in the feild. Being a frontend web devloper makes you learn a lot of things about user experience too. <br> My hobbies include <span class="coloured">reading and writing</span>. I also enjoy painting and drawing.
+                <br><br><em><b>Languages</b></em> <br>&bull;English <br>&bull; Hindi</p>
+
+                  <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Achievements</p>
+                  </div>
+                  <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>WebD course &bull; 2025</span><br>Udemy Full stack web development</li>
+                        <li><span>B.Tech &bull; 2025</span><br>Electrical Engineering</li>
+                        <li><span>Intermidiate &bull; 2021</span><br>State Board</li>
+                        <li><span>Matriculation &bull; 2019</span><br>State board</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents active" id="Skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/app interfaces</li>
+                        <li><span>WebDevelopment</span><br>Frontend WebDevelopment</li>
+                        <li><span>Electrical Engineering</span><br>MATLAB and Simulink</li>
+                        <li><span>Programming</span><br>JAVA, Python</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>UI/UX designer</span><br>Dean Student Welfare Club</li>
+                        <li><span>Graphic Designer</span><br>Think India Club</li>
+                        <li><span>Electrical Engineering</span><br>Aurdino Sensor</li>
+                    </ul>
+                  </div>
+
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- .............................Services...........................  -->
+   <div id="services">
+    <div class="container">
+        <h1 class="title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop"></i> 
+                <h2>Web or UX/UI Design</h2>
+                <p> I am passionate about designing beautiful, intuitive interfaces that help people be more productive. I work with clients to create innovative and effective user interfaces that help them get the most out of their products..</p>
+                <!-- <a href="#contact">Learn More</a> -->
+            </div>
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>Frontend Web Development</h2>
+                <p>I like to craft solid and scalable frontend products with great user experience. So, looking for a fron tend developer!! Get your websites design using HTMl, CSS and Javascript along with bootstrap.</p>
+                <!-- <a href="#contact">Learn More</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-object-group"></i>
+                <h2>Graphic and Logo Design</h2>
+                <p>Graphic designers create visual communications such as adverts, branding, publicity materials and magazine layouts. Let your brand talk to the users through posters, dashboards logos and moodboards.</p>
+                <!-- <a href="#contact">Learn More</a> -->
+            </div>
+        </div> 
+    </div>
+   </div>
+<!-- .................................portfolio................................  -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="GraphicDesign.jpg" alt="">
+                <div class="layer">
+                    <h3>Graphic Designing</h3>
+                    <p>Some of the samples of my graphic designing works are attached for your reference that I have worked on using various softwares like Figma , Photoshope , Canva etc.</p>
+                    <a href="https://drive.google.com/drive/folders/13Q8TAbCQs2Y2mr45DmHChVvFmSzG8hor" target="_blank">  <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="uxDesign.jpg" alt="">
+                <div class="layer">
+                    <h3>UX/UI designing</h3>
+                    <p>Some of the samples of my UX/UI designing works are attached for your reference that include web interface and dashboards. </p>
+                    <a href="https://www.figma.com/file/xN9oska1ncG1aZJfDmzzcc/Sharable-file?type=design&node-id=0%3A1&t=tcQB0FAF4Z8odRCA-1" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="webDev.jpg" alt="">
+                <div class="layer">
+                    <h3>Frontend Web Development</h3>
+                    <p>One of the sample of my frontend web development work includes simon game whose site is attached here.</p>
+                    <a href="https://rashika1350.github.io/Simon-Game/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btn"> See More</a> -->
+    </div>
+</div>
+<!-- ................................... contact................................  -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="title">Contact Me</h1>
+                <a href="mailto:2021uee1350@gmail.com" class="fa-sharp fa-regular fa-envelope"></a>
+                <p class="emailId">2021uee1350@mnit.ac.in</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/_____rashika______?igshid=ZGUzMzM3NWJiOQ==" class="fa-brands fa-instagram"  ></a>
+                    <a href="https://www.linkedin.com/in/rashika-agrawal-755291244" class="fa-brands fa-linkedin" target="_blank"></a >
+                    <a href="https://t.me/agr_ra" class="fa-brands fa-telegram" target="_blank"></a>
+                    <a href="https://github.com/Rashika1350" class="fa-brands fa-github" target="_blank"></a>
+                </div>
+                <a href="2021UEE1350.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="" name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Enter Email" required>
+                    <textarea name="Message" rows="6" placeholder="Enter your message here"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="confirmation"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copy-right">
+        <p>	&#169; Copyright O Rashika, Made with  <i class="fa-sharp fa-solid fa-heart"></i> by Rashika Agrawal.</p>
+    </div>
+</div>
+   <script src="portfolio.js"></script>
+</body>
+</html>
+
+
+<!-- web app url -->
+<!-- https://script.google.com/macros/s/AKfycbxnJpq_2rRtLlV2-JDHMwfbJ7nNbU0VKbCXiFDf6_VfdYg3hv3pEBEbZO77mnAV4eOhqg/exec -->
+
+<!-- deloyment id -->
+<!-- AKfycbxnJpq_2rRtLlV2-JDHMwfbJ7nNbU0VKbCXiFDf6_VfdYg3hv3pEBEbZO77mnAV4eOhqg  -->
